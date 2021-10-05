@@ -1,0 +1,17 @@
+body{
+    background-color: #0080FF;
+}
+.tb{
+    width: 50%;
+    margin: 0 auto 0 auto;
+    background-color: #00A0FF;
+}
+.tb td{
+    text-align: center;
+}
+.kep {
+    border: 2px solid black; height: 250px; margin: 0 auto 0 auto;
+}
+.tóbiás{
+    font-size: larger;
+}
