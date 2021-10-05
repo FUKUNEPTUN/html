@@ -1,0 +1,62 @@
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}.header{
+    max-width: 1000px;
+    min-width: 650px;
+    background-image: url(panorama.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 20px;
+    background-position: center;
+    background-size: cover; 
+}
+.keret{
+    width: 1000px;
+    margin-right: auto; margin-left: auto;}
+
+
+.div1{
+    width: 450px;
+    float: left;
+    background-color: #5B9CEA;
+    padding: 20px;
+}
+a{
+    color: red;
+    text-decoration: none;}
+.div2{
+    width: 450px;
+    float: right;
+     background-color: #5B9CEA;
+     padding: 20px;
+}
+.felkover{
+        font-weight: bold;
+}       
+            .tablazat{
+    text-align: center;
+    background-color: #B0D1F1;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+#bskrrr{
+   font-weight: bold;
+}
+
+.tablazat td{
+    border: 1px solid black;
+    padding: 5px;
+}
+a:hover{
+    color: black;
+    background-color: red;
+}
+.kkkk img{
+    width: 150px;
+           float: right;
+           margin-right: 100px;
+            margin-top: 20px;
+}
