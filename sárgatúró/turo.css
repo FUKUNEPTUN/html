@@ -1,0 +1,45 @@
+#keret{
+    margin:auto;
+    border-style: none solid;
+	border-color:gray;
+    border-width: 20px;
+    width: 70%;
+    padding: 20px;
+}
+.ritka{
+    letter-spacing: 4px;
+}
+#kep{
+    width:40%;
+    box-shadow: 8px 8px 5px gray;
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    border-radius: 10px;
+    border-style: solid;
+    margin: 30px;
+    float: right;
+    border-width: 3px;
+}
+input{
+    font-family:cursive; 
+    font-weight: bold;
+    border-radius: 5px; 
+    width: 40px;
+    font-size: 18px;
+    color:forestgreen;   
+}
+body{
+    font-family: cursive;
+    background-image: url(hatter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    text-align: justify;
+}
+ul{
+    font-style: italic;
+    font-weight: bold;
+    list-style-type: square;
+}
