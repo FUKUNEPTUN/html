@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="urlap">
+        szám <br>
+        <input type="number" name="szam" id="szam"
+        min="10" max="50">
+        <input type="button" value="Csillagozz" onclick="csillag(document.urlap.szam.value)">
+    </form>
+    <script>
+        function csillag(f){
+        let p = parseInt(f);
+
+        let x = "";
+        let i = 0;
+        let b = true
+        
+            while (b) {
+                if(i < p)
+                {
+                x += " * ";
+                i++;                    
+                } else b = false
+
+            }
+        alert(x);
+        }
+
+    </script>
+</body>
+</html>
