@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <meta name="author" content="Bor"> 
+</head>
+<body>
+    <style>
+
+        #ketto tr        { background-color: #DDD;             text-align:right;   }
+        #ketto tr.felso  { background-color: #444; color:#FFF;                     }
+    
+    </style>
+    <table id='ketto' align=center cellpadding=4 width=240>
+        <tr class='felso'><th> hatvány </th><th> érték </th></tr>
+    <script>
+        for( i=0 ; i<=16 ; i++ )
+        {
+            if( i==0 )  ertek = 1
+        else        ertek = ertek * 2
+    
+            document.write( "<tr><td> 2<sup>" +i+ "</sup> </td><td>" +ertek+ "</td></tr>" )
+        }
+    </script>
+    <tr class='felso'><td></td><td></td></tr>
+    </table>
+</body>
+</html>
