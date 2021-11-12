@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <meta name="author" content="Bor"> 
+</head>
+<body>
+
+    <script>
+        function checkAge(){
+            try{
+                var a=document.forms[0].kor.value
+                if (a > 99)
+                throw RangeError
+            }
+            catch(e){
+                alert(e.name)
+            }
+            document.write("az ön kora" +a)
+        }
+    </script>
+   <form >
+       <label for="">adja meg az életkorát</label>
+       <input type="text" name="kor" onblur="checkAge()">
+   </form>
+</body>
+</html>
