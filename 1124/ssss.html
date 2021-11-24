@@ -1,0 +1,28 @@
+<!--   Készítsen egy weboldalt, melyen bekéri x, y, és z értékét, és kiszámítja a következő képlet alapján:
+    2*x^2 - 3*négyzetgyök(y) + 5*z-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="agy">
+            <input type="number" name="x">
+            <input type="number" name="y">
+            <input type="number" name="z">
+            <input type="button" value="oké" onclick="s(document.agy.x.value, document.agy.y.value, document.agy.z.value)">
+        </form>
+        <script>
+            function s(t) { 
+                var x = parseInt(document.agy.x.value);
+                var y = parseInt(document.agy.y.value);
+                var z = parseInt(document.agy.y.value);
+                var e = 2 * x^2 - 3 * Math.sqrt(y) + 5 * z;
+                alert("a végeredmény" +e);
+            }
+        </script>
+    </body>
+    </html>
