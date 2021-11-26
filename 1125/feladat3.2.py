@@ -1,0 +1,3 @@
+evek = ["az év 1. hónapja a január   ", "az év 2. hónapja februar   ", "az év 3. hónapja a március   ", "az év 4. hónapja az április   ", "az év 5. hónapja a május   ", "az év 6. hónapja június       ", "az év 7. hónapja a július   ", "az év 8 hónapja az augusztus      ", "az év 9 hónapja a szeptember     ", "az év 10 hónapja az oktober    ", "az év 11 hónapja november         ", "az év 12 hónapja a december"]
+for x in evek:
+  print(x)
