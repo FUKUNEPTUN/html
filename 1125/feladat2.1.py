@@ -1,5 +1,5 @@
 c = int(10000)
-r = int(1.08) 
+r = 0.08
 m = int(12)
 t = int(input("évek száma:   "))
 
