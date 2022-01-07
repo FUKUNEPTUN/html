@@ -1,0 +1,1 @@
+from uniteszt import teszt

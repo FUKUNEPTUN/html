@@ -7,4 +7,4 @@ def rajz(hossz, szog, oldal):
 rajz(100, 120, 3)
 rajz(100, 90, 4)
 rajz(100, 60, 6)
-rajz(100, 20, 18)
+rajz(50, 20, 18)
