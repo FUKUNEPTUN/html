@@ -58,13 +58,37 @@ body{
 }
 .main{
     height: 95vh; width: 100%;
+    border-radius: 1vmin;
 }
 .hd{
-    height: 10vh; width: 99vw; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 90px;
+    height: 10%; width: 99%; text-align: center; display: block; background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 90px; margin-bottom: 1%; box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.25); border: 0.2vmax rgba(0, 0, 0, 0.17) solid;
 }
-.tart{
+.uhd{
+    width: 100%; height: 85%;border-radius: 1vmin; border: 0.2vmax rgba(0, 0, 0, 0.515) solid; box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.25);
+}
+#tart{
+    background-color: rgba(0, 0, 0, 0.1); width: 10%;
+    border-radius: 1vmin;
+    display: inline;
+    float: left;
+    height: 100%;
+    padding: 0;
+}
+#tart1{
+    
+    width: 80%;
+    display: inline-block;
+    height: 100%;
+    border-radius: 1vmin;
 
+}
+#tart2{
+    border-radius: 1vmin;
+    display: inline;
+    float: right;
+    height: 100%;
+    padding: 0;
 }
 .bruh {   
     height: 100%;
@@ -102,4 +126,43 @@ body{
 }
 .avatar:hover{
     height: 95%;
+}
+.avatar2:hover{
+    height: 95%;
+}
+.hirhd{
+    width: 100%; height: 3%;margin-bottom: 2%; background-color: rgba(17, 17, 17, 0.61); color: aliceblue; text-align: center;
+}
+.hirlink{
+    height: 100%; width: 100%;    text-decoration: none;
+}
+.hir{
+    color: black;
+    width: 100%;
+    height: 18.7%;
+    padding-bottom: 0.4%;
+}
+.hirkep{
+    width: 100%;
+    height: 75%;
+}
+.hircim{
+    width: 100%;
+    height: 25%;
+    font-size: 0.7rem;
+    color: white;
+    text-shadow: 2px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.172);
+    display: flex;
+    text-align: center;
+}
+.mid{
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0.5vmin;
+    height: 5.5%; width: 100.5%;
 }
