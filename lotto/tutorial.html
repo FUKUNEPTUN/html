@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi tutorial oldala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body onload="startTime()">
+    <div style="width: 100%; height: 10vh;">
+        <div style=" display: block; margin-left: auto; margin-right: auto; width: 50%;"><h1 style=" text-align: center ; color: aliceblue;">Tutorial gyűjtemény</h1></div>
+    </div>
+<div><h3 style="color: aliceblue;">Válassz nyelvet</h3></div>
+    <div style="width: 100%; color: aliceblue;">
+        <div class="grid-container" style="grid-template-columns: auto  auto auto auto;">
+            <div class="grid-item"><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/html.png"     >   </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/cs/index.php" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/C-Sharp.webp" >  </a> </div>
+            <div class="grid-item"><a href="https://getbootstrap.com/docs/5.1/examples/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/bt.png"  >  </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/js.png"  >  </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/mySQl/default.asp" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/mysql.png"  > </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/php/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/php.svg"  >  </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/python/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/python.png"  >  </a></div>
+            <div class="grid-item"><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer"><img class="kép" src="img/css.png"  >  </a></div>
+        </div>
+    </div>
+    
+    <div  style=" float: left; width: 50%;">
+        <h6 id="txt" style="color: aliceblue;"></h6>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script>
+        function startTime() {
+          const today = new Date();
+          let ev = today.getFullYear();
+          let honap = today.getMonth();
+          let skr = today.getDay();
+          let nap = today.getDate();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+        
+          let tomb = ["január", "februar", "március", "április","május","június","július","augusztus",]
+          m = checkTime(m);
+          s = checkTime(s);
+          nap = checkTime(nap);
+          skr = hét(skr);
+          document.getElementById('txt').innerHTML = ev + "."+ tomb[honap] + "."+ nap+". "+"("+ skr+")" +"    \t  "+ h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+            if (m % 2 == 0) {
+                document.getElementById('kep').innerHTML = "<img src='letöltés.png'>";
+            }
+            else{
+                document.getElementById('kep').innerHTML = "<img src='no.png'>";
+            }
+          
+    
+        }
+    
+        function hét(i) {
+            switch (i) {
+                case 1:
+                    return "hétfő"
+                    break;
+                case 2 :
+                    return "kedd"
+                    break;
+                case 3:
+                    return "szerda"
+                    break;
+                case 4:
+                    return "csütörtök"
+                    break;
+                case 5:
+                    return "péntek"
+                    break;
+                case 6 :
+                    return "szombat"
+                    break;
+                default:
+                    break;
+            }
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+
+</html>
