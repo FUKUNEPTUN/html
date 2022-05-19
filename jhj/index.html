@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mátrixok szorzása</title>
+</head>
+<input type="number" name="szam1" id="elsomatrixsor">
+<input type="number" name="szam2" id="elsomatrixoszlop">
+<br>
+<input type="number" name="szam3" id="masodikmatrixsor">
+<input type="number" name="szam4" id="masodikmatrixoszlop">
+<br>
+<input type="number" name="index1" id="indexx">
+<input type="number" name="index2" id="indexxx">
+<br>
+<input type="submit" value="Halál" onclick="kaka()">
+<p id="matriksz1"></p>
+<p id="matriksz2"></p>
+
+<body>
+    <script>
+        function kaka() {
+            Math.random(1, 10)
+            let elsomatrixsor = document.getElementById('elsomatrixsor').value;
+            let elsomatrixoszlop = document.getElementById('elsomatrixoszlop').value;
+            let masodikmatrixsor = document.getElementById('masodikmatrixsor').value;
+            let masodikmatrixoszlop = document.getElementById('masodikmatrixoszlop').value;
+            let indexx = document.getElementById('indexx').value;
+            let indexxx = document.getElementById('indexxx').value;
+            if (elsomatrixsor != masodikmatrixoszlop || elsomatrixoszlop != masodikmatrixsor) {
+                alert("Egy szar vagy Tomi")
+            } else {
+                let matrix1 = new Array(elsomatrixsor);
+                let test = 1;
+                for (let i = 0; i < elsomatrixsor; i++) {
+                    matrix1[i] = new Array(elsomatrixoszlop);
+                }
+                for (let i = 0; i < elsomatrixsor; i++) {
+                    for (let j = 0; j < elsomatrixoszlop; j++) {
+                        matrix1[i][j] = test++;
+                    }
+                }
+
+                let matrix2 = new Array(masodikmatrixsor);
+                let test2 = 1;
+                for (let i = 0; i < masodikmatrixsor; i++) {
+                    matrix2[i] = new Array(masodikmatrixoszlop);
+                }
+                for (let i = 0; i < masodikmatrixsor; i++) {
+                    for (let j = 0; j < masodikmatrixoszlop; j++) {
+                        matrix2[i][j] = test2++;
+                    }
+                }
+                alert("Ügyi vagy    " + matrix1 + "  második tömb   " + matrix2)
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
