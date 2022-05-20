@@ -18,6 +18,7 @@
 <input type="submit" value="Halál" onclick="kaka()">
 <p id="matriksz1"></p>
 <p id="matriksz2"></p>
+<p id="p"></p>
 
 <body>
     <script>
@@ -29,10 +30,29 @@
             let masodikmatrixoszlop = document.getElementById('masodikmatrixoszlop').value;
             let indexx = document.getElementById('indexx').value;
             let indexxx = document.getElementById('indexxx').value;
-            if (elsomatrixsor != masodikmatrixoszlop || elsomatrixoszlop != masodikmatrixsor) {
+            let matrixhossz = elsomatrixsor * elsomatrixoszlop;
+            let matrixhossz2 = masodikmatrixsor * masodikmatrixoszlop;
+            if (elsomatrixoszlop != masodikmatrixsor) {
                 alert("Egy szar vagy Tomi")
             } else {
-                let matrix1 = new Array(elsomatrixsor);
+                let A = new Array(matrixhossz);
+                let B = new Array(matrixhossz2);
+                for (let i = 0; i < matrixhossz; i++) {
+                    A[i] = i;
+                }
+                for (let i = 0; i < matrixhossz; i++) {
+                    B[i] = i;
+                }
+
+                document.getElementById('matriksz1').innerHTML = "Elso matrix" + A;
+                document.getElementById('matriksz2').innerHTML = "második mátrix   " + B;
+
+
+            }
+        }
+    </script>
+</body>
+<!--                let matrix1 = new Array(elsomatrixsor);
                 let test = 1;
                 for (let i = 0; i < elsomatrixsor; i++) {
                     matrix1[i] = new Array(elsomatrixoszlop);
@@ -53,12 +73,21 @@
                         matrix2[i][j] = test2++;
                     }
                 }
-                alert("Ügyi vagy    " + matrix1 + "  második tömb   " + matrix2)
 
+                let matrix3 = new Array(elsomatrixsor);
+                let test3 = 1;
+                for (let i = 0; i < elsomatrixsor; i++) {
+                    matrix3[i] = new Array(masodikmatrixoszlop);
+                }
+                for (let i = 0; i < elsomatrixsor; i++) {
+                    for (let j = 0; j < masodikmatrixoszlop; j++) {
+                        for (let k = 0; k < matrixhossz; k++) {
+                            for (let l = 0; l < matrixhossz2; l++) {
+                                matrix3[i][j] = 1;
+                            }
+                        }
 
-            }
-        }
-    </script>
-</body>
+                    }
+                }-->
 
 </html>
