@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>Termék adatai:</p>   
+
+Termék neve:
+<input type="text" id="bevitel1" onfocus="sarga()" onblur="feher()"  >
+<br>
+Termék ára:
+<input type="text" id="bevitel2">
+<br>   
+Termék darabszáma:
+<input type="text" id="bevitel3">
+<br>
+Termék típusa:
+<select  id="lenyilo">
+    <option value="tejtermék">tejtermék</option>
+    <option value="pékáru">pékáru</option>
+    <option value="édesség">édesség</option>
+ 
+  </select>
+  <br>
+<button onclick="szamitas()">Számítás</button>
+<br>
+<div id="doboz"></div>
+
+<script>
+function szamitas(){
+    console.log("Kattintás!")
+    let sz=""
+    sz+="Termék neve:"+document.getElementById("bevitel1").value+"<br>" 
+    sz+="Termék ára:"+document.getElementById("bevitel2").value+"<br>" 
+    sz+="Termék darabszáma:"+document.getElementById("bevitel3").value+"<br>" 
+    sz+="Termék típusa:"+document.getElementById("lenyilo").value+"<br>" 
+
+    let ar=document.getElementById("bevitel2").value 
+    let db=document.getElementById("bevitel3").value 
+    sz+="Összérték: "+ar*db+" Ft"
+
+    document.getElementById("doboz").innerHTML=sz
+}   
+
+function sarga(){
+    document.getElementById("bevitel1").style.backgroundColor="yellow"
+}
+function feher(){
+    document.getElementById("bevitel1").style.backgroundColor="white"
+}
+</script>
+
+
+</body>
+</html>
